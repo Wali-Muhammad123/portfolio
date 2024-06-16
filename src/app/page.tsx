@@ -2,6 +2,7 @@ import Image from "next/image";
 import CircularImageWithBackground from "@/components/CircularImage";
 import BackgroundAnimator from "@/components/BackgroundAnimator";
 import { Navbar } from "@/components/Navbar";
+import AboutMe from "@/components/AboutMe";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         height={400}
       />
       <Navbar />
+      <AboutMe />
     </main>
   );
 }
