@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './AboutMe.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const AboutMe = () => {
   return (
@@ -29,6 +31,9 @@ const AboutMe = () => {
       <p className={styles.description}>
         Passionate about creating innovative solutions, I am committed to delivering high-quality code and enhancing the overall user experience. Whether working independently or as part of a team, I am dedicated to achieving project goals and driving business success through effective and efficient software engineering practices.
       </p>
+      <a href="/resume.pdf" download className={styles.downloadButton}>
+      <FontAwesomeIcon icon={faDownload} className={styles.icon} /> Download My Resume
+      </a>
     </div>
   );
 };
